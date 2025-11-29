@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Khayme_W_Nar</string>
+    <string name="AvailableCamps">Available Camps</string>
+    <string name="Community">Community</string>
+    <string name="BookedCamps">Booked Camps</string>
+    <string name="Profile">Profile</string>
+    <string name="location">Location:</string>
+    <string name="price">Price Per Person:</string>
+    <string name="BookNow">Book Now</string>
+    <string name="bookCampTitle">Book Your Camp</string>
+    <string name="fromDateRes">From Date:</string>
+    <string name="dateStyle">YYYY-MM-DD</string>
+    <string name="toDateRes">To Date:</string>
+    <string name="yourName">Full Name:</string>
+    <string name="numberOfGuests">Number Of Guests:</string>
+    <string name="submit">Submit</string>
+    <string name="reset">Reset</string>
+    <string name="activities">Available Activites</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="login">login</string>
+    <string name="signup">signup</string>
+
+    <string name="loginhere">Already have an account?<u> Login</u></string>
+    <string name="signuphere">Create a new account? <u>Signup</u></string>
+    <string name="fullname">fullname</string>
+    <string name="email">email</string>
+    <string name="your_camping_tasks">Task:</string>
+</resources>

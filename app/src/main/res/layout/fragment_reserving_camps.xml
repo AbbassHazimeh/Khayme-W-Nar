@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PeachBeige"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:src="@drawable/khaymewnar"
+        />
+
+    <TextView
+        android:id="@+id/bookCampTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/bookCampTitle"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:background="@color/Orange"
+        android:textColor="@color/white"
+        android:gravity="center" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/yourName"
+        android:textColor="@color/DarkGreen"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        />
+    <EditText
+        android:id="@+id/yourName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/yourName"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fromDateRes"
+        android:textColor="@color/DarkGreen"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        />
+    <EditText
+        android:id="@+id/fromDateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/dateStyle"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/toDateRes"
+        android:textColor="@color/DarkGreen"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        />
+    <EditText
+        android:id="@+id/toDateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/dateStyle"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/numberOfGuests"
+        android:textColor="@color/DarkGreen"
+        android:textStyle="bold"
+        android:textSize="17sp" />
+    <EditText
+        android:id="@+id/numberOfGuests"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:inputType="number" />
+    <Button
+        android:id="@+id/submitRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:text="@string/submit"
+        android:layout_marginBottom="20dp"
+        />
+    <Button
+        android:id="@+id/resetRes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:text="@string/reset"
+        android:layout_marginBottom="20dp"
+        />
+</LinearLayout>
+</ScrollView>

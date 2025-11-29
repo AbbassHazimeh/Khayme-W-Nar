@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+  <item
+      android:id="@+id/navigation_community"
+      android:icon="@drawable/community"
+      android:title="@string/Community"
+      />
+  <item
+      android:id="@+id/navigation_available_camps"
+      android:icon="@drawable/tent"
+      android:title="@string/AvailableCamps"
+      />
+  <item
+      android:id="@+id/navigation_booked_camps"
+      android:icon="@drawable/bonfire"
+      android:title="@string/BookedCamps"
+      />
+  <item
+      android:id="@+id/navigation_profile"
+      android:icon="@drawable/axe"
+      android:title="@string/Profile"
+      />
+</menu>

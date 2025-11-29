@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.Khayme_W_Nar" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/DarkGreen</item>
+    </style>
+    <style name="MyToolbarStyle" parent="Widget.MaterialComponents.Toolbar.Primary">
+        <item name="android:background">@color/DarkGreen</item>
+        <item name="titleTextColor">@color/Orange</item>
+    </style>
+    <style name="Theme.Khayme_W_Nar" parent="Base.Theme.Khayme_W_Nar" />
+
+</resources>

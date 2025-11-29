@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/navigation_available_camps">
+<fragment
+    android:id="@+id/navigation_community"
+    android:name="lb.edu.ul.khayme_w_nar.ui.community.CommunityFragment"
+    android:label="Community"
+    tools:layout="@layout/fragment_community">
+    <action
+        android:id="@+id/action_to_addExperience"
+        app:destination="@+id/fragment_add_user"
+    />
+</fragment>
+
+
+    <!-- AddUserFragment -->
+    <fragment
+        android:id="@+id/fragment_add_user"
+        android:name="lb.edu.ul.khayme_w_nar.ui.community.AddExperienceFragment"
+        android:label="Add User"
+        tools:layout="@layout/fragment_add_experience" />
+
+    <fragment
+        android:id="@+id/navigation_available_camps"
+        android:name="lb.edu.ul.khayme_w_nar.ui.available_camps.AvailableCampsFragment"
+        android:label="Available Camps"
+        tools:layout="@layout/fragment_available_camps">
+
+<!--      action to navigate to DescriptionFragment -->
+        <action
+            android:id="@+id/action_to_description"
+            app:destination="@id/fragment_camp_description" />
+        <action
+            android:id="@+id/action_to_activities"
+            app:destination="@id/fragment_activities_camp" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_booked_camps"
+        android:name="lb.edu.ul.khayme_w_nar.ui.booked_camps.BookedCampsFragment"
+        android:label="Booked Camps"
+        tools:layout="@layout/fragment_booked_camps">
+    <action
+        android:id="@+id/action_booked_camps_to_checklistFragment"
+        app:destination="@id/checklistFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="lb.edu.ul.khayme_w_nar.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_loginFragment"
+            app:destination="@+id/loginFragment" />
+
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        </fragment>
+
+    <fragment
+        android:id="@+id/fragment_camp_description"
+        android:name= "lb.edu.ul.khayme_w_nar.ui.description.DescriptionFragment"
+        android:label="Description"
+        tools:layout="@layout/fragment_camp_description">
+
+        <action
+            android:id="@+id/action_to_bookCamp"
+            app:destination="@+id/fragment_camp_reserving"
+            />
+        <action
+            android:id="@+id/action_to_loginFragment"
+            app:destination="@+id/loginFragment"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_camp_reserving"
+        android:name= "lb.edu.ul.khayme_w_nar.ui.reserving_camps.ReservingCampsFragment"
+        android:label="Reserving Camps"
+        tools:layout="@layout/fragment_reserving_camps"
+        >
+        <action
+            android:id="@+id/action_from_res_To_booked_camps"
+            app:destination="@id/navigation_booked_camps"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_activities_camp"
+        android:name="lb.edu.ul.khayme_w_nar.ui.activities.ActivitiesFragment"
+        tools:layout="@layout/fragment_activities_camps"
+        android:label="@string/activities"
+        />
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="lb.edu.ul.khayme_w_nar.ui.login_signup.LoginFragment"
+        android:label="Login"
+        android:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_availablecamps"
+            app:destination="@id/navigation_available_camps" />
+        <action
+            android:id="@+id/action_loginFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_descriptionFragment"
+            app:destination="@id/fragment_camp_description" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="lb.edu.ul.khayme_w_nar.ui.login_signup.SignupFragment"
+        android:label="Signup"
+        android:layout="@layout/fragment_signup">
+        <action
+            android:id="@+id/action_signupFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/checklistFragment"
+        android:name="lb.edu.ul.khayme_w_nar.ui.booked_camps.ChecklistFragment"
+        android:label="Checklist"
+        android:layout="@layout/fragment_checklist">
+        <action
+            android:id="@+id/checklist_to_checklistInfo"
+            app:destination="@id/checklist_Info_Fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/checklist_Info_Fragment"
+        android:name="lb.edu.ul.khayme_w_nar.ui.booked_camps.ChecklistInfoFragment"
+        android:label="Add Task"
+        android:layout="@layout/fragment_checklist_info_layout">
+        <action
+            android:id="@+id/checklistInfo_to_checklist"
+            app:destination="@id/checklistFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="lb.edu.ul.khayme_w_nar.ui.profile.EditProfileFragment"
+        android:label="Edit Profile">
+    </fragment>
+
+
+</navigation>

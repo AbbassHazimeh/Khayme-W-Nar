@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/OffWhite"
+    android:paddingRight="30dp"
+    android:paddingLeft="30dp"
+    android:paddingTop="35dp">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="230dp"
+        android:src="@drawable/khaymewnar"
+        />
+
+    <EditText
+        android:id="@+id/fullnameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/fullname"
+        android:fontFamily="@font/poppinsmedium"
+        android:drawableRight="@drawable/anotherfullname"
+        android:layout_marginBottom="16dp"
+        android:importantForAccessibility="yes"
+        />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_marginBottom="16dp"
+        android:drawableRight="@drawable/mail"
+        android:importantForAccessibility="yes"
+        />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        android:fontFamily="@font/poppinsmedium"
+        android:drawableRight="@drawable/username"
+        android:layout_marginBottom="16dp"
+        android:importantForAccessibility="yes"
+        />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:fontFamily="@font/poppinsmedium"
+        android:layout_marginBottom="16dp"
+        android:drawableRight="@drawable/password"
+        android:importantForAccessibility="yes"
+        />
+
+    <Button
+        android:id="@+id/btnsignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Orange"
+        android:text="@string/signup"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="3dp"/>
+
+
+
+</LinearLayout>
